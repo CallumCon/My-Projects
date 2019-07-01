@@ -1,0 +1,118 @@
+<!--
+
+Assignment: BSc Mobile Web Applications, Digital Skills Academy
+Student ID: WE60-1081
+File created: 2018/05/27
+Reference Sources: Website link to code referenced or the book, authors name and page number
+
+@author: Callum Condron
+@version: v1.0
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dublin Bus Finder App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/theme.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet" />
+</head>
+
+<body>
+<div data-role="page" id="page1">
+  <div class="ui-content">
+    <div class="content-primary">
+
+      <div data-role="header">
+      <h1 id ="centerContent">Get Next Bus Details</h1>
+      </div>
+
+      <div>
+        <input data-type="search" placeholder="Enter Bus Stop Number" id="bus_stop_id" name="bus_stop_id">
+      </div>
+
+      <input type="button" value="Get Current Update" id="button_get_bus">
+      <br>
+      <br>
+
+      <div data-role="header">
+        <h1 id ="centerContent">Check A bus Stop Number Here</h1>
+      </div>
+
+      <div data-demo-html="true">   
+        <ul data-role="listview" data-filter="true" data-filter-reveal="true" id="myList"></ul>
+      </div> 
+
+    </div>
+  </div>
+</div>
+
+<div data-role="page" id="page2">
+  <div  class="ui-content">
+    <div class="content-primary">
+      <div id="resultDiv">
+        <div data-role="header">
+        <h1 id ="centerContent">Information on the next bus at stop <span id="stop"></span></h2>
+        </div>
+          <table data-role="table" id="temp-table" data-mode="reflow" class="ui-responsive table-stroke">
+
+            <thead>
+              <tr>
+                <th data-priority="2">Due time</th>
+                <th data-priority="persist">Route Number</th>
+                <th data-priority="1">Traveling from</th>
+                <th data-priority="1">Traveling to</th>
+                <th data-priority="2">Arrival Date & Time</th>
+              </tr>
+            </thead>
+
+              <tbody>
+                <tr>
+                  <td><span id="due"></span> mins</td>
+                  <td><span id="routeNum"></span></td>
+                  <td><span id="from"></span></td>
+                  <td><span id="to"></span></td>
+                  <td><span id="arival"></span></td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+
+      <div class="wrapper">
+        <a data-role="button" data-inline="true" data-transition="slide" href="#page1">Back</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="modal" title="test">
+
+  <!-- Modal Content  -->
+  <div id ="centerContent" class="modal-content">
+
+    <h1>Welcome to the bus finder app!</h1>
+    <p>The app is simple and easy to use and an essential travel buddy in the big smoke!</p>
+    <p>Just type the bus stop number into the text field on the app and press "Get Current Update"</p>
+    <p>You will then be presented with the next bus to arrive at that stop</p>
+    <h2 id ="centerContent">Easy Peasy</h2>
+    <img  src="css/images/dublinBusLogo.png">
+
+  </div>
+  
+  <button id="btnCancel">close</button>
+
+</div>
+
+<!--Loading scripts at bottom of the page-->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.js"></script>
+  <script src="js/assignment2.js"></script>
+
+</body>
+</html>
