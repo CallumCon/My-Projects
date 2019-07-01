@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Rollin' Empire</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap Stylesheet-->
+  <link rel="stylesheet" href="Assignment3/Bootstrap/css/bootstrap.min.css">
+  <!--Custom Stye sheet-->
+  <link rel="stylesheet" type="text/css" href="Assignment3/customStyles.css">
+  <!--Links to Google Fonts applied in custom stylesheet-->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  
+</head>
+
+<body>
+<!--Logo Header-->
+<a href="index.html"><img id="headerLogo" src="images/relogo.png" width="200" alt="Rollin' Empire Logo"></a>
+<!--Start Of Navbar-->
+<nav id="navbar-primary" class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="band.html">BAND</a></li>
+        <li><a href="gigs.html">GIGS</a></li>
+        <li><a href="media.html">MEDIA</a></li>
+        <li class="active"><a href="contact.html">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">SOCIAL MEDIA
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.facebook.com/rollinempire/" target="_blank">FACEBOOK</a></li>
+            <li><a href="https://twitter.com/rollinempire" target="_blank">TWITTER</a></li>
+            <li><a href="https://www.instagram.com/rollinempire/" target="_blank">INSTAGRAM</a></li> 
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--End Of Navbar-->
+<div class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>Contact us for any gig or event enquieres</em></p>
+  <div class="row">
+    <div class="col-md-4">
+      <p><span class="glyphicon glyphicon-map-marker"> </span>Bundoran, Co.Donegal, Ireland</p>
+      <p><span class="glyphicon glyphicon-phone"> </span>Phone: Mick: 00353 87 901 3643 </p>
+      <p><span class="glyphicon glyphicon-phone"> </span>Phone: Anna: 00353 87 913 7955  </p>
+      <p><span class="glyphicon glyphicon-envelope"> </span>Email: rollinempireband@gmail.com</p> 
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<!--Start of Footer-->
+<footer id="myFooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h5>SiteMap</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="band.html">Band</a></li>
+          <li><a href="gigs.html">Gigs</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>Social Media</h5>
+        <ul>
+          <li><a href="https://www.facebook.com/rollinempire/">Facebook</a></li>
+          <li><a href="https://twitter.com/rollinempire">Twitter</a></li>
+          <li><a href="https://www.instagram.com/rollinempire/">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>Contact</h5>
+        <p>ME Management<br/>
+        <span class="glyphicon glyphicon-phone"> </span>Phone: Mick: 00353 87 901 3643 <br>
+        <span class="glyphicon glyphicon-phone"> </span>Phone: Anna: 00353 87 913 7955 <br>
+        <span class="glyphicon glyphicon-envelope"> </span>Email: <a href="mailto:rollinempireband@gmail.com">rollinempireband@gmail.com</a><br>
+        </p>
+      </div>
+
+<!-- Start Of Modal -->
+<!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSubscriptionForm">
+        Join The Empire
+      </button>
+
+      <div class="modal fade" id="modalSubscriptionForm" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4>Subscribe</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="form3" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="form3">Your name</label>
+              </div>
+              <div class="md-form mb-4">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="form2" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="form2">Your email</label>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-indigo">Send<i class="fa fa-paper-plane-o ml-1"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>          
+<!--End of modal-->
+    </div>
+  </div>
+
+<!-- Copyright bar at the bottom of the page ouside of the footer conatiner-->
+
+  <div class="footer-copyright">
+    <p>
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </p>
+      <p>WE6.0_WDP_A3_Callum_Condron</p>
+  </div>
+
+</footer> 
+<!--END OF FOOTER-->
+
+<!--Loading Scripts at bottom of the page-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="Assignment3/Bootstrap/js/bootstrap.min.js"></script>
+
+<script>  
+$(document).ready(function(){
+//Dropdown Navbar jQuery 
+//How it works: Targets the id dropdown-toggle in the navbar. Uses a click function to slide toggle the menu so when the user clicks on the social media menu it toggles a slide down effect. 
+$('.dropdown-toggle').click(function() {
+  $(this).next('.dropdown-menu').slideToggle(250);
+});
+
+//Navbar hover jQuery effect
+// How it works: targets links in list of navbar when mouse is over those links it changes color to #d84b6b. When mouse is not over the links it applies the color they are static which is #fff or white.
+$('.navbar-nav li a').mouseover(function(){
+  $(this).css( "color", "#d84b6b" );
+});
+$('.navbar-nav li a').mouseout(function(){
+  $(this).css("color", "#fff");
+});
+});
+</script>
+</body>
+
+</html>

@@ -1,0 +1,288 @@
+/* DOCUMENT INFORMATION
+    - Document: customStyles.css
+    - Version:  1
+    - Author:   Callum Condron
+*/
+
+
+/*===== General Styles =====*/
+
+body{
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #fff;
+    background-image: url(../images/backgroundImage.jpg);
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+footer{
+  background-color: #2d2d30;
+}
+
+/*===== Header Styles =====*/
+
+@media (max-width: 767.98px) {
+    #headerLogo
+  {
+     width: 150px;
+  }
+}
+
+#headerLogo {
+    display: block;
+    margin: 20px auto;
+  }
+
+/*===== Navbar Styles =====*/
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+    background-color: #000;
+    border: 0;
+    letter-spacing: 4px;
+}
+
+/* Underline active navbar link*/
+@media (min-width: 767.98px){ .navbar-default .navbar-nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: " ";
+    border-bottom: 3px solid #d84b6b;
+}
+}
+/* Navbar align center for larger screens */
+@media (min-width: 992px){ #navbar-primary.navbar-default .navbar-nav {
+  width: 100%;
+  text-align: center;
+    }
+}
+
+@media (min-width: 992px) { #navbar-primary.navbar-default .navbar-nav li {
+      display: inline-block;
+      float: none;
+    }
+}
+
+/* Spacing for navbar links */
+#navbar-primary.navbar-default .navbar-nav li a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Navbar links are white also when active*/
+.navbar-default .navbar-nav li a{
+    color: #fff;
+}
+.navbar-default .navbar-nav .active a{
+    color: #fff;
+}
+
+/* Remove border color from the collapsible button */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* Dropdown */
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #555 !important;
+}
+.navbar-nav li .dropdown-menu{
+    background-color: #2d2d30;
+}
+
+@media (min-width: 992px){.dropdown-menu li a:hover {
+    background-color: transparent; 
+}
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu li a {
+    color: #fff;
+}
+
+/* The active link */
+.navbar-nav li.active a {
+    background-color: transparent !important;
+}
+
+/*===== Carousel Styles =====*/
+
+.sliderLink{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sliderLink:hover{
+    text-decoration: none;
+    color: #d84b6b;
+}
+
+/*===== Home Page container Styles =====*/
+
+#spotifyContainer{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#reviewsContainer{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Border on spotify widget*/
+#spotifyWidget{
+ border: none;
+}
+
+/*===== Bio Text Styling on Band Page =====*/
+
+.bio
+{
+    text-align: justify;
+    font-size: 18px;
+}
+
+/*===== Band Page Button Styles =====*/
+
+.btn {
+    color: #fff;
+    background-color: #2d2d30;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 25px;
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+.btn:focus{
+    color: #fff;
+}
+
+/*===== Gig Page Header =====*/
+
+#gigPageHeader{
+    text-align: center;
+}
+
+/*===== Accordion Styles =====*/
+
+.ui-widget-content{
+    color: #fff;
+    background-color: #2d2d30;
+}
+
+.ui-state-default{
+    color: #fff;
+    background-color: #2d2d30;
+}
+.ui-state-active{
+    border-color: #fff;
+}
+
+#accordion{
+    margin: 30px;
+}
+
+/*===== Blueimp Photo Gallery Styles =====*/
+
+#gallery-container{
+    margin-bottom: 40px;
+}
+
+#links img{
+    align-content: center;
+}
+
+/*On mobile devices images are full opacity*/
+@media (min-width: 767.98px){
+#links img{
+    opacity: 0.7;
+}
+}
+
+/*===== Footer Styles =====*/
+
+#myFooter {
+    color: #fff;
+    padding-top: 20px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #333333;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 20px;
+}
+
+#myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.5em;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#myFooter a:hover{
+    text-decoration: none;
+    color: #d84b6b;
+}
+
+#myFooter .btn {
+    color: #fff;
+    background-color: #d84b6b;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+.modal-content{
+background-color: #2d2d30;
+}

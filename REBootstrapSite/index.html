@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Rollin' Empire</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap Stylesheet-->
+  <link rel="stylesheet" href="Assignment3/Bootstrap/css/bootstrap.min.css">
+  <!--Custom Styesheet-->
+  <link rel="stylesheet" type="text/css" href="Assignment3/customStyles.css">
+  <!--Links to Google Fonts applied in custom stylesheet-->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<!--Logo Header-->
+<a href="index.html"><img id="headerLogo" src="images/relogo.png" width="200" alt="Rollin' Empire Logo"></a>
+<!--Start Of Navbar-->
+<nav id="navbar-primary" class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="index.html">HOME</a></li>
+        <li><a href="band.html">BAND</a></li>
+        <li><a href="gigs.html">GIGS</a></li>
+        <li><a href="media.html">MEDIA</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">SOCIAL MEDIA
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.facebook.com/rollinempire/" target="_blank">FACEBOOK</a></li>
+            <li><a href="https://twitter.com/rollinempire" target="_blank">TWITTER</a></li>
+            <li><a href="https://www.instagram.com/rollinempire/" target="_blank">INSTAGRAM</a></li> 
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--End Of Navbar-->
+
+<!--Start of Carousel-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div id="mySlider" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images/carouselImages/LongWayCarousel.jpg" alt="Band photo 1">
+            <div class="carousel-caption">
+              <h1>NEW SINGLE AND VIDEO</h1>
+              <h2>Now Avaliable on <a href="https://open.spotify.com/album/3xbAyJkHgxrvBM74mJ3Oi1?si=-3fgdXLjRlOIblsbCXSocw" target="_blank" class="sliderLink">Spotify</a> and <a href="https://www.youtube.com/watch?v=fyPbouDp41k" target="_blank" class="sliderLink">YouTube <span class="glyphicon glyphicon-headphones"></span></a></h2>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/carouselImages/Band1edit.jpg" alt="Band photo 2">
+            <div class="carousel-caption">
+              <h1>ROLLIN' EMPIRE</h1>
+              <a href="band.html" class="sliderLink"><h2>Meet The Band <span class="glyphicon glyphicon-sunglasses"></span></h2></a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/carouselImages/Band3edit.jpg" alt="Band photo 3">
+            <div class="carousel-caption">
+              <h1>ROLLIN' EMPIRE LIVE</h1>
+              <a href="gigs.html" class="sliderLink"><h2>Check Out Our Upcoming Dates <span class="glyphicon glyphicon-volume-up"></span></h2></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls for the Carousel -->
+        <a class="left carousel-control" href="#mySlider" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#mySlider" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--End of Carousel-->
+
+<!--Spotify Container-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="spotifyContainer">
+        <h3>Listen to Our Debut Album on Spotify</h3>
+<!--Spotify Widget taken from : https://beta.developer.spotify.com/documentation/widgets/generate/play-button/-->
+        <iframe id= "spotifyWidget" src="https://open.spotify.com/embed?uri=spotify:artist:68bOqo1FIljho24JhmAUBJ" width="300" height="380"></iframe>
+     </div>
+    </div>
+    <div class="col-sm-6">
+<!--Reviews Container-->
+      <div id="reviewsContainer">
+        <h3>Reviews</h3>
+        <blockquote class="blockquote">
+        Irish band of the Week “The brilliance is irrefutable and just on the cusp of greatness” - Dublin Concerts
+      </blockquote>
+      <blockquote class="blockquote">
+        Album Review - 8/10 "A rich post-modern New Wave style that is inherently fluid" - Unsigned & Independent Music Magazine
+      </blockquote>
+      <blockquote class="blockquote">
+        "These lads are pros and they’re going for the big gigs" - Metal Ireland
+      </blockquote>
+      <blockquote class="blockquote">
+        "Rollin' Empire have stamped a contemporary and current fusion of both genres on an old school rock blow-out that is debut album Nowhere to Run" - Remy’s Music & Film
+      </blockquote>
+     </div>
+    </div>
+  </div>
+</div>
+
+<!-- Start of Footer -->
+<footer id="myFooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h5>SiteMap</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="band.html">Band</a></li>
+          <li><a href="gigs.html">Gigs</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>Social Media</h5>
+        <ul>
+          <li><a href="https://www.facebook.com/rollinempire/">Facebook</a></li>
+          <li><a href="https://twitter.com/rollinempire">Twitter</a></li>
+          <li><a href="https://www.instagram.com/rollinempire/">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>Contact</h5>
+        <p>ME Management<br/>
+        <span class="glyphicon glyphicon-phone"> </span>Phone: Mick: 00353 87 901 3643 <br>
+        <span class="glyphicon glyphicon-phone"> </span>Phone: Anna: 00353 87 913 7955 <br>
+        <span class="glyphicon glyphicon-envelope"> </span>Email: <a href="mailto:rollinempireband@gmail.com">rollinempireband@gmail.com</a><br>
+        </p>
+      </div>
+
+<!-- Start Of Modal -->
+<!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSubscriptionForm">
+        Join The Empire
+      </button>
+
+      <div class="modal fade" id="modalSubscriptionForm" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">  
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4>Subscribe</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5">
+                <i class="fa fa-user prefix grey-text"></i>
+                <input type="text" id="form3" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="form3">Your name</label>
+              </div>
+              <div class="md-form mb-4">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="form2" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="form2">Your email</label>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-indigo">Send<i class="fa fa-paper-plane-o ml-1"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>          
+<!--End of modal-->
+    </div>
+  </div>
+
+<!-- Copyright bar at the bottom of the page ouside of the footer conatiner-->
+  <div class="footer-copyright">
+    <!--Brag tag taken from W3 css Validator-->
+    <p>
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </p>
+      <p>WE6.0_WDP_A3_Callum_Condron</p>
+  </div>
+</footer> 
+<!--End of Footer-->
+
+<!--Loading Scripts at bottom of the page-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="Assignment3/Bootstrap/js/bootstrap.min.js"></script>
+
+<script>
+//Dropdown Navbar jQuery 
+//How it works: Targets the id dropdown-toggle in the navbar. Uses a click function to slide toggle the menu so when the user clicks on the social media menu it toggles a slide down effect. 
+$(document).ready(function(){
+$('.dropdown-toggle').click(function() {
+  $(this).next('.dropdown-menu').slideToggle(250);
+});
+
+//Navbar hover jQuery effect
+// How it works: targets links in list of navbar when mouse is over those links it changes color to #d84b6b. When mouse is not over the links it applies the color they are static which is #fff or white.
+$('.navbar-nav li a').mouseover(function(){
+  $(this).css( "color", "#d84b6b" );
+});
+$('.navbar-nav li a').mouseout(function(){
+  $(this).css("color", "#fff");
+});
+
+//Text on carusel resizing jQuery effect 
+//How it works: Targets text on carousel and depending on window size resized the text to fit that window. 
+$(window).resize(function() {
+  $('.carousel .carousel-caption').css('zoom', $('.carousel').width()/1250);
+});
+});
+</script>
+</body>
+
+</html>
