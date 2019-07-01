@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Dublin Concert Listings</title>
+	<meta charset="UTF-8"> 	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/custom.css" />  		
+	<link rel="stylesheet" href="css/theme.min.css" /> 
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+</head>
+<body>
+
+	<div data-role="page" id="pageone">
+<!-- Start of Panel -->
+	<div data-role="panel" id="mypanel">
+		<h2>Dublin Concert Listings</h2>
+	    <p>Welcome to Dublin Concert Listings! Please click on the artist name to find out their concert details. You can filter the results in the searchbox at the top of the list to refine the list to find who you really want to see!</p>
+	</div>
+<!-- End of Panel -->
+
+<!-- Start of Header -->
+	<div data-role="header">
+    	<h1>Dublin Concert Listings</h1>
+	</div>
+<!-- End of Header -->
+
+<!-- Start of Content -->
+	<div data-role="content">
+	<div class="content-primary">
+		<div data-demo-html="true">		
+			
+   			<ul data-role="listview" data-filter="true" id="myList">
+   				
+   			</ul>
+  
+		</div> 
+	</div>		
+	</div>
+<!-- End of Content -->
+
+<!-- Start of Footer -->
+	<div data-role="footer">
+	<a href="#mypanel">Open/Close Panel</a>
+	</div>
+<!-- End of footer -->
+
+</div> <!-- end of pageone -->
+
+<!--Loading scripts at bottom of the page-->
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+<script type="text/javascript" src="js/assignment1.js"></script>
+
+</body>		
+</html>

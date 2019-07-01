@@ -1,0 +1,46 @@
+{
+	"bands": [
+	{ 
+		"bandName" : "Queen",
+		"venue" : "Marley Park",
+		"date":"June 17th",
+		"time" : "8:00PM",
+		"image" : "http://1.bp.blogspot.com/_S5dFdpF6xm0/Sv8lJCmHTqI/AAAAAAAAAsU/1WhU165ZtFA/s400/queen-band.jpg"
+	},
+	{
+		"bandName" : "Iron Maiden",
+		"venue" : "Sin E",
+		"date":"June 18th",
+		"time" : "8:00PM",
+		"image" : "https://images-na.ssl-images-amazon.com/images/I/81oYcySvWVL._SL1273_.jpg"
+	},
+	{
+		"bandName" : "Slayer",
+		"venue" : "3Arena",
+		"date" : "June 19th",
+		"time" : "8:00PM",
+		"image" : "https://yt3.ggpht.com/a-/AJLlDp3htF77zXKaUYn_bM8UQaz7eIETml6K1IQd-g=s900-mo-c-c0xffffffff-rj-k-no"
+	},
+	{
+		"bandName" : "Spinal Tap",
+		"venue" : "The Olympia",
+		"date" : "June 11th",
+		"time" : "11:11PM",
+		"image" : "https://consequenceofsound.files.wordpress.com/2013/05/stcvr300-1.jpg"
+	},
+	{
+		"bandName" : "Oasis",
+		"venue" : "3Arena",
+		"date" : "June 30th",
+		"time" : "8:00PM",
+		"image" : "https://yt3.ggpht.com/a-/AJLlDp0a9BsEQYs-q45Efn4tVG6V-Li39hevmWql9g=s900-mo-c-c0xffffffff-rj-k-no"
+	},
+	{
+		"bandName" : "The Smiths",
+		"venue" : "The Ambassador",
+		"date" : "May 29th",
+		"time" : "8:00PM",
+		"image" : "https://lastfm-img2.akamaized.net/i/u/avatar170s/1f6b747994bdbbd09eda60f30f6b52ee.jpg"
+	}
+	]
+}
