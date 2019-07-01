@@ -1,0 +1,26 @@
+body {
+   background-image: url("images/liveaid.jpg");
+   background-color: #cccccc;
+}
+
+.centered-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+ul {
+ list-style: none;
+}
+.centered-wrapper:before {
+
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 0; height: 100%;
+    vertical-align: middle;
+}
+.centered-content {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+}
